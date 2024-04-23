@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .brand {
+            color: whitesmoke;
+            font-family: 'poppins', sans-serif;
+            background-color: rgb(148, 0, 177);
+            padding: 45px 65px;
+            font-size: 50px;
+        }
+
+        .nav {
+            display: flex;
+            height: 50px;
+            padding-top: 17px;
+            border-top: solid rgba(255, 255, 255, .2);
+            background-color: rgb(148, 0, 177);
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .nav input {
+            font-size: 1em;
+            height: 30px;
+            width: 400px;
+            padding: 15px 15px;
+            margin-bottom: 100px;
+            margin-left: 60px;
+            background: transparent;
+            border: none;
+            border-bottom: solid 3px #fff;
+            color: #fff;
+        }
+
+        ::placeholder {
+            color: #fff;
+        }
+
+        .nav nav {
+            margin-left: 210px;
+        }
+
+        .nav nav a {
+            margin-left: 35px;
+            padding: 20px;
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        #Home {
+            border-bottom: solid 4px #fff;
+        }
+
+        .option {
+            width: 100%;
+            height: 50px;
+            padding-top: 25px;
+            padding-bottom: 25px;  
+        }
+
+        .option a {
+            text-decoration: none;
+            margin-left: 260px;
+            padding: 15px 100px;
+            font-size: 30px;
+            border-radius: 60px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .Groceries {
+            background-color: rgb(148, 0, 177);
+            color: #fff;
+        }
+
+        .Electronics{
+            color: rgb(148, 0, 177);
+            background-color: #fff;
+            border: solid 4px rgb(148, 0, 177);
+        }
+
+        .items {
+            width: 80%;
+            height: 200px;
+            margin: 35px 150px;
+            border-radius: 50px;
+            border: solid 4px rgb(148, 0, 177);
+            display: flex;
+        }
+        .items:hover{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        }
+        .img{
+            width: 20%;
+            height: 75%;
+            border: solid 2px rgb(148, 0, 177);
+            border-radius: 25px;
+            margin: 20px;
+        }
+        .pname{
+            padding: 5px 0px;
+        }
+        .price{
+            display: flex;
+            padding: 5px 0px;
+        }
+        #op{
+            font-size: 15px;
+            text-decoration: line-through;
+            text-decoration-color: red;
+            text-decoration-thickness: 4px;
+        }
+        .price p{
+            font-size: 20px;
+        }
+        #sub{
+            font-size: 13px;
+            padding-top: 6px;
+        }
+        .delivery{
+            padding: 5px 0px;
+        }
+        .buttons{
+            display: flex;
+            width: 600px;
+            height: 50px;
+            margin-top: 5px;
+        }
+        #cart{
+            margin-left: 35px;
+            height: 40px;
+            width: 200px;
+            border-radius: 20px;
+            border: solid 3px rgb(148, 0, 177);
+            background-color: #fff;
+            color: rgb(148, 0, 177);
+            font-size: medium;
+        }
+        #cart ion-icon{
+            font-size: 20px;
+            font-weight: 600;
+            padding-right: 7px;
+        }
+        #buy{
+            height: 40px;
+            width: 200px;
+            border-radius: 20px;
+            background-color: rgb(148, 0, 177);
+            border: none;
+            color: #fff;
+            font-size: medium;
+        }
+        #cart:hover{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        }
+        #buy:hover{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        }
+        .des{
+            margin: 20px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="brand">
+        <h2>.SYJ Store</h2>
+    </div>
+    <div class="nav" id="bar">
+        <input type="search" placeholder="Search">
+        <nav>
+            <a id="Home" href="project1_home_elec.html">Home</a>
+            <a href="project1_my_orders.html">My Orders</a>
+            <a href="project1_cart.html">Cart</a>
+            <a href="project1_Aboutus.html">About Us</a>
+            <a href="project1_login.html">Log In</a>
+        </nav>
+    </div>
+    <div class="option">
+        <a class="Electronics" href="project1_home_elec.html">Electronics</a>
+        <a class="Groceries" href="project1_home_groc.html">Groceries</a>
+    </div>
+    <div class="items">
+        <div class="img"></div>
+        <div class="des">
+        <div class="pname"><h3>Product Name</h3></div>
+        <div class="price"><p>Price : </p><pre id="op"> 999 </pre><p>  499$</p><pre id="sub">   (inclusive of all taxex and GST) </pre></div>
+        <div class="delivery">Free Delivery</div>
+        <div class="buttons">
+            <button id="buy">Buy Now</button>
+            <button id="cart"><ion-icon name="cart"></ion-icon> Add To Cart</button>
+        </div>
+        </div>
+    </div>
+    <div class="items">
+        <div class="img"></div>
+        <div class="des">
+            <div class="pname"><h3>Product Name</h3></div>
+            <div class="price"><p>Price : </p><pre id="op"> 999 </pre><p>  499$</p><pre id="sub">   (inclusive of all taxex and GST) </pre></div>
+            <div class="delivery">Free Delivery</div>
+            <div class="buttons">
+                <button id="buy">Buy Now</button>
+                <button id="cart"><ion-icon name="cart"></ion-icon> Add To Cart</button>
+            </div>
+            </div>
+    </div>
+    <div class="items">
+        <div class="img"></div>
+        <div class="des">
+            <div class="pname"><h3>Product Name</h3></div>
+            <div class="price"><p>Price : </p><pre id="op"> 999 </pre><p>  499$</p><pre id="sub">   (inclusive of all taxex and GST) </pre></div>
+            <div class="delivery">Free Delivery</div>
+            <div class="buttons">
+                <button id="buy">Buy Now</button>
+                <button id="cart"><ion-icon name="cart"></ion-icon> Add To Cart</button>
+            </div>
+            </div>
+    </div>
+    <div class="items">
+        <div class="img"></div>
+        <div class="des">
+            <div class="pname"><h3>Product Name</h3></div>
+            <div class="price"><p>Price : </p><pre id="op"> 999 </pre><p>  499$</p><pre id="sub">   (inclusive of all taxex and GST) </pre></div>
+            <div class="delivery">Free Delivery</div>
+            <div class="buttons">
+                <button id="buy">Buy Now</button>
+                <button id="cart"><ion-icon name="cart"></ion-icon> Add To Cart</button>
+            </div>
+            </div>
+    </div>
+    <div class="items">
+        <div class="img"></div>
+        <div class="des">
+            <div class="pname"><h3>Product Name</h3></div>
+            <div class="price"><p>Price : </p><pre id="op"> 999 </pre><p>  499$</p><pre id="sub">   (inclusive of all taxex and GST) </pre></div>
+            <div class="delivery">Free Delivery</div>
+            <div class="buttons">
+                <button id="buy">Buy Now</button>
+                <button id="cart"><ion-icon name="cart"></ion-icon> Add To Cart</button>
+            </div>
+            </div>
+    </div>
+    <div class="items">
+        <div class="img"></div>
+        <div class="des">
+            <div class="pname"><h3>Product Name</h3></div>
+            <div class="price"><p>Price : </p><pre id="op"> 999 </pre><p>  499$</p><pre id="sub">   (inclusive of all taxex and GST) </pre></div>
+            <div class="delivery">Free Delivery</div>
+            <div class="buttons">
+                <button id="buy">Buy Now</button>
+                <button id="cart"><ion-icon name="cart"></ion-icon> Add To Cart</button>
+            </div>
+            </div>
+    </div>
+    <div class="items">
+        <div class="img"></div>
+        <div class="des">
+            <div class="pname"><h3>Product Name</h3></div>
+            <div class="price"><p>Price : </p><pre id="op"> 999 </pre><p>  499$</p><pre id="sub">   (inclusive of all taxex and GST) </pre></div>
+            <div class="delivery">Free Delivery</div>
+            <div class="buttons">
+                <button id="buy">Buy Now</button>
+                <button id="cart"><ion-icon name="cart"></ion-icon> Add To Cart</button>
+            </div>
+            </div>
+    </div>
+    <div class="items">
+        <div class="img"></div>
+        <div class="des">
+            <div class="pname"><h3>Product Name</h3></div>
+            <div class="price"><p>Price : </p><pre id="op"> 999 </pre><p>  499$</p><pre id="sub">   (inclusive of all taxex and GST) </pre></div>
+            <div class="delivery">Free Delivery</div>
+            <div class="buttons">
+                <button id="buy">Buy Now</button>
+                <button id="cart"><ion-icon name="cart"></ion-icon> Add To Cart</button>
+            </div>
+            </div>
+    </div>
+    <div class="items">
+        <div class="img"></div>
+        <div class="des">
+            <div class="pname"><h3>Product Name</h3></div>
+            <div class="price"><p>Price : </p><pre id="op"> 999 </pre><p>  499$</p><pre id="sub">   (inclusive of all taxex and GST) </pre></div>
+            <div class="delivery">Free Delivery</div>
+            <div class="buttons">
+                <button id="buy">Buy Now</button>
+                <button id="cart"><ion-icon name="cart"></ion-icon> Add To Cart</button>
+            </div>
+            </div>
+    </div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
